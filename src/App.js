@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
+import Footer from './Footer';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+
+      {/* HEADER COMPONENT */}
+      <Header />
+
+      {/* MAIN */}
+      <main>
+        <h2>ITIS 3135 Home</h2>
+        <p>This is all the content for my ITIS 3135 class</p>
+      </main>
+
+      {/* FOOTER COMPONENT */}
+      <Footer />
+
+      {/* External script example (optional, usually not needed in React) */}
+      <script src="scripts/HTMLInclude.min.js"></script>
+
     </div>
   );
 }
